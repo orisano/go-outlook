@@ -1,5 +1,5 @@
-# AMS-go
-Azure Media ServiceのAPIをgolangから使うための非公式SDKです.
+# go-outlook
+OutlookのAPIをgolangから使うための非公式SDKです.
 
 ## License
 MIT
