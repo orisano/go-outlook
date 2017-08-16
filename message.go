@@ -27,7 +27,6 @@ type Message struct {
 	ChangeKey                     string
 	ConversationID                string         `json:"ConversationId"`
 	Created                       DateTimeOffset `json:"CreatedDateTime"`
-	Extensions                    []Extension
 	From                          Recipient
 	HasAttachments                bool
 	ID                            string `json:"Id"`

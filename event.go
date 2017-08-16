@@ -30,36 +30,38 @@ const (
 )
 
 type Event struct {
-	Attachments       []Attachment
-	Attendees         []Attendee
-	Body              ItemBody
-	BodyPreview       string
-	Calendar          Calendar
-	Categories        []string
-	ChangeKey         string
-	Created           EventDateTimeOffset `json:"CreatedDateTime"`
-	LastModified      EventDateTimeOffset `json:"LastModifiedDateTime"`
-	End               EventDateTimeOffset
-	EndTimeZone       string
-	HasAttachments    bool
-	ID                string `json:"Id"`
-	Importance        Importance
-	Instances         []Event
-	ICalUID           string `json:"iCalUID"`
-	IsAllDay          bool
-	IsCancelled       bool
-	IsOrganizer       bool
-	Location          Location
-	Organizer         Recipient
-	Recurrence        PatternedRecurrence
-	ResponseRequested bool
-	ResponseStatus    ResponseStatus
-	Sensitivity       Sensitivity
-	SeriesMasterID    string `json:"SeriesMasterId"`
-	ShowAs            FreeBusyStatus
-	Start             EventDateTimeOffset
-	StartTimeZone     string
-	Subject           string
-	Type              EventType
-	WebLink           string
+	Attachments                []Attachment
+	Attendees                  []Attendee
+	Body                       ItemBody
+	BodyPreview                string
+	Calendar                   Calendar
+	Categories                 []string
+	ChangeKey                  string
+	Created                    DateTime `json:"CreatedDateTime"`
+	LastModified               DateTime `json:"LastModifiedDateTime"`
+	End                        DateTimeTimeZone
+	HasAttachments             bool
+	ID                         string `json:"Id"`
+	Importance                 Importance
+	Instances                  []Event
+	ICalUID                    string `json:"iCalUID"`
+	IsAllDay                   bool
+	IsCancelled                bool
+	IsOrganizer                bool
+	IsReminderOn               bool
+	Location                   Location
+	OnlineMeetingURL           string `json:"OnlineMeetingUrl"`
+	Organizer                  Recipient
+	OriginalEndTimeZone        string
+	OriginalStartTimeZone      string
+	Recurrence                 PatternedRecurrence
+	ReminderMinutesBeforeStart int
+	ResponseRequested          bool
+	ResponseStatus             ResponseStatus
+	Sensitivity                Sensitivity
+	SeriesMasterID             string `json:"SeriesMasterId"`
+	ShowAs                     FreeBusyStatus
+	Start                      DateTimeTimeZone
+	Type                       EventType
+	WebLink                    string
 }

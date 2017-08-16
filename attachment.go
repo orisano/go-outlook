@@ -24,7 +24,7 @@ const (
 type Attachment struct {
 	ContentType  string
 	IsInline     bool
-	LastModified DateTimeOffset `json:"LastModifiedDateTime"`
+	LastModified DateTime `json:"LastModifiedDateTime"`
 	Name         string
 	Size         int
 	ID           string `json:"Id"`
