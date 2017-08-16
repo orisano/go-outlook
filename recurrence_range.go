@@ -10,7 +10,7 @@ const (
 
 type RecurrenceRange struct {
 	Type                RecurrenceRangeType
-	StartDate           DateTimeOffset
-	EndDate             DateTimeOffset
+	StartDate           DateTime
+	EndDate             DateTime
 	NumberOfOccurrences int
 }

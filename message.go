@@ -25,8 +25,8 @@ type Message struct {
 	Categories                    []string
 	CcRecipients                  []Recipient
 	ChangeKey                     string
-	ConversationID                string         `json:"ConversationId"`
-	Created                       DateTimeOffset `json:"CreatedDateTime"`
+	ConversationID                string   `json:"ConversationId"`
+	Created                       DateTime `json:"CreatedDateTime"`
 	From                          Recipient
 	HasAttachments                bool
 	ID                            string `json:"Id"`
@@ -36,14 +36,14 @@ type Message struct {
 	IsDraft                       bool
 	IsRead                        bool
 	IsReadReceiptRequested        bool
-	LastModified                  DateTimeOffset `json:"LastModifiedDateTime"`
+	LastModified                  DateTime `json:"LastModifiedDateTime"`
 	MultiValueExtendedProperties  []MultiValueLegacyExtendedProperty
-	ParentFolderID                string         `json:"ParentFolderId"`
-	Received                      DateTimeOffset `json:"ReceivedDateTime"`
+	ParentFolderID                string   `json:"ParentFolderId"`
+	Received                      DateTime `json:"ReceivedDateTime"`
 	ReplyTo                       []Recipient
 	Sender                        Recipient
 	SingleValueExtendedProperties []SingleValueLegacyExtendedProperty
-	Sent                          DateTimeOffset `json:"SentDateTime"`
+	Sent                          DateTime `json:"SentDateTime"`
 	Subject                       string
 	ToRecipients                  []Recipient
 	UniqueBody                    ItemBody
